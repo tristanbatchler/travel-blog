@@ -1,1 +1,5 @@
 <script src="{{ "js/scroller.js" | relURL }}" defer></script>
+
+{{/* Override theme's medium-zoom JS */}}
+{{ $zoomJS := resources.Get "lib/medium-zoom/dist/medium-zoom.min.js" | resources.Fingerprint "sha512" }}
+<script src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
