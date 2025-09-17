@@ -88,7 +88,7 @@ Luckily for our love of gift shops, theirs was incredible. It was pretty crowded
 After exploring everything the museum had to offer, we decided to get some lunch at the [Straw Hat Café](https://en.japantravel.com/tokyo/ghibli-museum-s-straw-hat-cafe/30186). It's common in Japan to see plastic renditions of everything on a restaurant's menu, but the museum took it one step further and had knitted versions of their dishes. It was so cute and quirky!
 
 {{< image-gallery folder="5" >}}
-{{< image-gallery 5-part-2 >}}
+{{< image-gallery folder="5-part-2" >}}
 
 The museum was a huge highlight of our trip. It was curated to perfection and we were stoked that it had lived up to the hype. We booked our tickets about three months before our trip, and it was definitely worth the wait. It was extra special that we got to experience it together, and we highly recommend it to anyone visiting Japan who loves Studio Ghibli.
 
@@ -113,9 +113,9 @@ After returning to our hotel room, we decided to take it easy for the rest of th
 We emerged from our hotel in the evening to secure some grub. We weren't super hungry, so we explored Shibuya and took the opportunity to take some nighttime snaps in the city before grabbing dinner.
 
 {{< image-gallery folder="5.4" >}}
-{{< image-gallery 5.4-part-2 >}}
-{{< image-gallery 5.4-part-3 >}}
-{{< image-gallery 5.4-part-4 >}}
+{{< image-gallery folder="5.4-part-2" >}}
+{{< image-gallery folder="5.4-part-3" >}}
+{{< image-gallery folder="5.4-part-4" >}}
 
 After working up an appetite, we decided to try out a sushi place for dinner, [Katsu Midori](https://www.happycow.net/reviews/katsu-midori-tokyo-84977). It came highly recommended on [Happy Cow](https://www.happycow.net/) (a vegan food app), and we were desperate to have a good selection of vegetarian sushi in Japan. It was a bit of a mission to find the restaurant itself -- it was nestled in a large department building and it took some time to find what level it was on. After a bit of wandering around, we finally found it and joined the long line of people waiting to get in.
 
@@ -139,8 +139,8 @@ We ventured out to [Akihabara (秋葉原)](https://www.japan-guide.com/e/e3003.h
 We decided to visit [Asakusa (浅草)](https://www.japan-guide.com/e/e3004.html), a neighbourhood we hadn't explored yet, and hoping to visit some temples and [Tōkyō Skytree (東京スカイツリー)](https://www.japan-guide.com/e/e3064.html). We took the train there and found ourselves dropped off right in the middle of a bustling area full of shops and restaurants. It was chock-full of people because we were near [Sensō-ji (浅草寺)](https://www.japan-guide.com/e/e3001.html), Tōkyō's oldest temple and one of its most significant (and thus very popular). After wandering around we came across it and were captivated by its beauty, so we decided to explore it.
 
 {{< image-gallery folder="7" >}}
-{{< image-gallery 7-part-2 >}}
-{{< image-gallery 7-part-3 >}}
+{{< image-gallery folder="7-part-2" >}}
+{{< image-gallery folder="7-part-3" >}}
 
 It was incredible to see up close, and many people were taking part in spiritual practices inside the temple. We weren't familiar with how to take part the right way so we chose not to do so, but we watched the rituals from afar and appreciated their significance for so many people.
 
@@ -151,8 +151,8 @@ After about half an hour of exploring the temple, we continued on our exploratio
 We explored the area for a bit and decided to cross the river and visit the Tōkyō Skytree. It was a gorgeous day so we soaked up the sun on the walk (which took longer than expected).
 
 {{< image-gallery folder="7.2" >}}
-{{< image-gallery 7.2-part-2 >}}
-{{< image-gallery 7.2-part-3 >}}
+{{< image-gallery folder="7.2-part-2" >}}
+{{< image-gallery folder="7.2-part-3" >}}
 
 We eventually made it to the Skytree. It was enormous -- it absolutely towered over the nearby streets. There were heaps of people inside, so we had to wait in line for tickets for about half an hour. We got tickets for both the [Tembo Deck (350m high)](https://www.tokyo-skytree.jp/en/floor/1st/350.html) and the [Tembo Galleria (450m high)](https://www.tokyo-skytree.jp/en/floor/2nd/), but had to wait another 20 minutes for our time slot to open. We explored the ground level while we waited and came across this incredible mural that was both very detailed and massive in its scale.
 
@@ -163,7 +163,7 @@ Before we knew it, it was time to head up. We were delighted to learn that there
 There are no words for the views that greeted us as we entered the Tembo Deck. Tōkyō is an enormous city, and even though visibility was high that day, we couldn't see the end of it. Sometimes you can get lucky and see Mt. Fuji (富士山), but it was juuust too hazy for us. The deck wraps 360° around the building, so we could see the city from just about every angle. It was breathtaking.
 
 {{< image-gallery folder="7.4" >}}
-{{< image-gallery 7.4-part-2 >}}
+{{< image-gallery folder="7.4-part-2" >}}
 
 We soaked in the views and made our way up to the top floor, Tembo Galleria. The sun was starting to set on the city, and we decided to indulge in a cheeky beverage each at the bar. Definitely the best view we've ever had while enjoying a drink!
 
@@ -233,8 +233,8 @@ The next room was huge and filled with knee-deep water that had projections of k
 Next we went into a room with every surface covered in mirrors, with long strips of LEDs hanging from the ceiling. The strips were super close together with only a couple of paths through the room, and the lights flickered and changed colour. These lights were also controlled by an algorithm-based program, so it was cool to think that we would be the only people to see the lights change in this exact way.
 
 {{< image-gallery folder="8.4" >}}
-{{< image-gallery 8.4-part-2 >}}
-{{< image-gallery 8.4-part-3 >}}
+{{< image-gallery folder="8.4-part-2" >}}
+{{< image-gallery folder="8.4-part-3" >}}
 
 This is the room that is most popular on social media, so every single person was taking photos and selfies. They were also walking really slowly through the exhibit so it was hard to move around, so much so that the poor staff had to usher us along (an urgency that is very uncommon in Japan).
 
@@ -245,7 +245,7 @@ Afterwards, we moved on to a dark room with an incredible projection of flowers 
 Next, we headed to a room filled with enormous opaque spheres that were lit up with beautiful colours. You could even push some of the balls and almost kick them around.
 
 {{< image-gallery folder="8.5" >}}
-{{< image-gallery 8.5-part-2 >}}
+{{< image-gallery folder="8.5-part-2" >}}
 
 The second last room was outdoors. It had a moss floor and bunch of space-like silver blobs. It was a bit underwhelming considering the crazy sensory experiences we had just had, but it was still cool to see. It was also raining which deterred most people from spending too much time there.
 
@@ -254,7 +254,7 @@ The second last room was outdoors. It had a moss floor and bunch of space-like s
 The final room was the orchid room, which was another mirror room that had real, living orchids hanging from the ceilings. The orchids were raised and a large group of people would go in, and after everyone sat on the ground, the orchids would be lowered. It was like you were in the middle of the coolest floral rainforest. It was incredible to see in person.
 
 {{< image-gallery folder="8.7" >}}
-{{< image-gallery 8.7-part-2 >}}
+{{< image-gallery folder="8.7-part-2" >}}
 
 If you're heading to Tōkyō, this has to be on your list of places to visit. It's usually the first thing everyone recommends, and for good reason! It is totally worth the money, just make sure you bring comfy shorts.
 
