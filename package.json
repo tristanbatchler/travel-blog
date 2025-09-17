@@ -1,16 +1,9 @@
 {
-  "name": "japan-blog",
-  "version": "2.0.0",
+  "name": "travel-blog",
+  "version": "0.0.1",
   "description": "Tristan & Soph's travel blog",
   "scripts": {
     "install:zoom": "cd assets/lib/medium-zoom && . /usr/share/nvm/init-nvm.sh && nvm use && npm install",
     "build:zoom": "cd assets/lib/medium-zoom && . /usr/share/nvm/init-nvm.sh && nvm use && npm run build"
-  },
-
-  "devVendorCopy": [
-    {
-      "from": "assets/lib/medium-zoom/dist/pure/medium-zoom.min.umd.js",
-      "to": "assets/lib/zoom/zoom.min.umd.js"
-    }
-  ]
+  }
 }
