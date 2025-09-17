@@ -1,0 +1,16 @@
+{
+  "name": "japan-blog",
+  "version": "2.0.0",
+  "description": "Tristan & Soph's travel blog",
+  "scripts": {
+    "setup:zoom": "cd assets/lib/medium-zoom && npx -p node@10 npm install",
+    "build:zoom": "cd assets/lib/medium-zoom && npx -p node@10 npm run build"
+  },
+
+  "devVendorCopy": [
+    {
+      "from": "assets/lib/medium-zoom/dist/pure/medium-zoom.min.umd.js",
+      "to": "assets/lib/zoom/zoom.min.umd.js"
+    }
+  ]
+}

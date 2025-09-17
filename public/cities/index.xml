@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cities on Notes from Nihon</title>
+    <link>http://localhost:1313/cities/</link>
+    <description>Recent content in Cities on Notes from Nihon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>me@tbat.me (Sophie &amp; Tristan)</managingEditor>
+    <webMaster>me@tbat.me (Sophie &amp; Tristan)</webMaster>
+    
+    <lastBuildDate>Mon, 06 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/cities/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tōkyō • 東京</title>
+      <link>http://localhost:1313/cities/tokyo-return/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      <author>me@tbat.me (Sophie &amp; Tristan)</author>
+      <guid>http://localhost:1313/cities/tokyo-return/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/cities/tokyo-return/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Yamanouchi • 山ノ内</title>
+      <link>http://localhost:1313/cities/yamanouchi/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      <author>me@tbat.me (Sophie &amp; Tristan)</author>
+      <guid>http://localhost:1313/cities/yamanouchi/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/cities/yamanouchi/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Hiroshima • 広島市</title>
+      <link>http://localhost:1313/cities/hiroshima/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      <author>me@tbat.me (Sophie &amp; Tristan)</author>
+      <guid>http://localhost:1313/cities/hiroshima/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/cities/hiroshima/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Ōsaka • 大阪</title>
+      <link>http://localhost:1313/cities/osaka/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      <author>me@tbat.me (Sophie &amp; Tristan)</author>
+      <guid>http://localhost:1313/cities/osaka/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/cities/osaka/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Kyōto • 京都</title>
+      <link>http://localhost:1313/cities/kyoto/</link>
+      <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      <author>me@tbat.me (Sophie &amp; Tristan)</author>
+      <guid>http://localhost:1313/cities/kyoto/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/cities/kyoto/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Tōkyō • 東京</title>
+      <link>http://localhost:1313/cities/tokyo/</link>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
+      <author>me@tbat.me (Sophie &amp; Tristan)</author>
+      <guid>http://localhost:1313/cities/tokyo/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/cities/tokyo/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

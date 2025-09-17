@@ -1,0 +1,50 @@
+.image-gallery {
+  margin-left: -1px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1rem;
+  padding: 0;
+
+  &.gallery-continuation {
+    margin-top: 6px;
+  }
+
+  li {
+    display: block; 
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+
+    a {
+      text-align: center; 
+      text-decoration: none!important; 
+      color: #777;
+
+      span {
+        display: block; 
+        white-space: normal; 
+        padding-top: 3px;
+      }
+    }
+
+    img, video {
+      height: 100%; /* Now image takes full height of li */
+      width: 100%; /* And full width of li */
+      display: block;
+      border-radius: 10px;
+      object-fit: cover;
+      max-height: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.toc a.text-active {
+  font-weight: bolder;
+  color: var(--tw-prose-invert-heading);
+  &:is(.dark *) {
+    color: var(--tw-prose-heading);
+  }
+}

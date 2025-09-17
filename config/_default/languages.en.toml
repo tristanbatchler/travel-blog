@@ -1,0 +1,41 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Notes from Nihon"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
+  description = "Tristan & Sophie's travel journal from their trip to Japan in 2023"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[params.author]
+  name = "Sophie & Tristan"
+  email = "me@tbat.me"
+  image = "img/us.jpg"
+  imageQuality = 96
+  headline = "👋 Hi, I’m Tristan!"
+  bio = """
+        Hi! We're Sophie and Tristan, an Australian couple in our mid-twenties who love to travel. We have two orange cats, Ferris and Goldie (we only had Ferris at the time of our trip). We're also tech nerds, and we built this website ourselves to have a place to easily look back on our travel memories.
+
+        This blog documents our trip to Japan in early 2023. It was Soph's first trip overseas, and Tristan's second. Each page is a recollection of our experiences in each city, big and small, and features our recommendations for accommodation, food, and attractions. Each page is smattered with happy snaps from our iPhones and nicer pictures taken on Soph's Sony α6400 (stock lens). The nicer photos were edited in Lightroom.
+
+        We wrote this blog from transcribed voice notes we recorded every night of our trip. It was a great way to make sure we didn't forget any of the small moments of our trip.
+
+        We hope you enjoy it!
+
+        ~ Soph & T
+        """
+  links = [
+    { email = "mailto:me@tbat.me" },
+    { link = "https://tbat.me/" },
+    { github = "https://github.com/tristanbatchler" },
+    { itch-io = "https://saltytaro.itch.io" },
+    { linkedin = "https://linkedin.com/in/tristanbatchler" },
+    { youtube = "https://www.youtube.com/@tristanbatchler" },
+  ]

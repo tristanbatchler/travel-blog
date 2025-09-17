@@ -1,0 +1,18 @@
+<script>
+  zoom = mediumZoom(document.querySelectorAll("img:not(.nozoom), video:not(.nozoom)"), {
+    margin: 24,
+    background: "rgba(0,0,0,0.5)",
+    scrollOffset: 0,
+  });
+  zoom.on("open", (e) => {
+    enlarged = e.detail.zoom.getZoomedImage();
+    console.log("Image enlarged:", enlarged);
+    enlarged.style.width = "auto";
+    enlarged.style.height = "auto";
+  });
+  zoom.on("close", (e) => {
+    console.log("Zoom closed:", e)
+    enlarged.style.width = "";
+    enlarged.style.height = "";
+  });
+</script>

@@ -1,0 +1,7 @@
+[submodule "themes/blowfish"]
+	path = themes/blowfish
+	url = https://github.com/nunocoracao/blowfish.git
+	branch = main
+[submodule "assets/lib/medium-zoom"]
+	path = assets/lib/medium-zoom
+	url = https://github.com/tristanbatchler/medium-zoom
