@@ -1,6 +1,6 @@
 [submodule "themes/blowfish"]
 	path = themes/blowfish
-	url = https://github.com/nunocoracao/blowfish.git
+	url = https://github.com/nunocoracao/blowfish
 	branch = main
 [submodule "assets/lib/medium-zoom"]
 	path = assets/lib/medium-zoom

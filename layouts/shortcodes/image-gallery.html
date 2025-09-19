@@ -1,19 +1,25 @@
 {{- $folder := .Get "folder" -}}
-{{- $caption := .Get "caption" | default "" -}}  {{/* optional caption parameter */}}
+{{- $caption := .Get "caption" | default "" -}}
 {{- $class := "gallery-regular" -}}
 {{- if in $folder "-part-" }}{{ $class = "gallery-continuation" }}{{ end }}
+{{- $page := .Page -}}
 
 <ul class="image-gallery {{ $class }}">
-  {{- $images := (.Page.Resources.Match (printf "%s/*" $folder)) -}}
+  {{- $images := ($page.Resources.Match (printf "%s/*" $folder)) -}}
   {{- range sort $images "Name" -}}
     {{- $ext := lower (path.Ext .Name) -}}
     <li>
       {{- if in (slice ".jpg" ".jpeg" ".png" ".gif") $ext }}
         <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ .Name }}">
       {{- else if eq ".webm" $ext }}
+        {{- $basename := replace (path.Base .Name) $ext "" -}}
+        {{- $mp4 := $page.Resources.GetMatch (printf "%s/%s.mp4" $folder $basename) -}}
         <video autoplay loop muted playsinline loading="lazy">
           <source src="{{ .RelPermalink }}" type="video/webm">
-          Sorry, your browser doesn't support WebM.
+          {{- if $mp4 }}
+            <source src="{{ $mp4.RelPermalink }}" type="video/mp4">
+          {{- end }}
+          Your browser does not support the video tag.
         </video>
       {{- end }}
       {{- if $caption }}
