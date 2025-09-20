@@ -41,10 +41,33 @@
   }
 }
 
-.toc a.text-active {
-  font-weight: bolder;
-  color: var(--tw-prose-invert-heading);
-  &:is(.dark *) {
-    color: var(--tw-prose-heading);
+.toc {
+  a:hover {
+    color: var(--tw-prose-invert-heading);
+    &:is(.dark *) {
+      color: var(--tw-prose-heading);
+    }
   }
+  a.text-active {
+    font-weight: bolder;
+    color: var(--tw-prose-invert-heading);
+    &:is(.dark *) {
+      color: var(--tw-prose-heading);
+    }
+  }
+}
+
+span.gallery-caption {
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  margin-top: 4px; /* Space between image and caption */
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+
+article h1 {
+  font-family: "Hina Mincho", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem; /* Tailwind's text-4xl */
 }
