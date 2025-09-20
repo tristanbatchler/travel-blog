@@ -9,8 +9,14 @@
   {{- range sort $images "Name" -}}
     {{- $ext := lower (path.Ext .Name) -}}
     <li>
-      {{- if in (slice ".jpg" ".jpeg" ".png" ".gif") $ext }}
-        <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ .Name }}">
+      {{- if in (slice ".jpg" ".jpeg" ".png") $ext }}
+        {{- $thumb := .Resize "800x" -}}
+        <img src="{{ $thumb.RelPermalink }}"
+             data-zoom-src="{{ .RelPermalink }}"
+             loading="lazy"
+             alt="{{ .Name }}">
+      {{- else if eq ".gif" $ext }}
+        <img src="{{ .RelPermalink }}" data-zoom-src="{{ .RelPermalink }}" loading="lazy" alt="{{ .Name }}">
       {{- else if eq ".webm" $ext }}
         {{- $basename := replace (path.Base .Name) $ext "" -}}
         {{- $mp4 := $page.Resources.GetMatch (printf "%s/%s.mp4" $folder $basename) -}}
