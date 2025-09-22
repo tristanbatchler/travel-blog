@@ -4,33 +4,70 @@
 {{- if in $folder "-part-" }}{{ $class = "gallery-continuation" }}{{ end }}
 {{- $page := .Page -}}
 
-<ul class="image-gallery {{ $class }}">
-  {{- $images := ($page.Resources.Match (printf "%s/*" $folder)) -}}
-  {{- range sort $images "Name" -}}
-    {{- $ext := lower (path.Ext .Name) -}}
-    <li>
-      {{- if in (slice ".jpg" ".jpeg" ".png") $ext }}
-        {{- $thumb := .Resize "800x" -}}
-        <img src="{{ $thumb.RelPermalink }}"
-             data-zoom-src="{{ .RelPermalink }}"
-             loading="lazy"
-             alt="{{ .Name }}">
-      {{- else if eq ".gif" $ext }}
-        <img src="{{ .RelPermalink }}" data-zoom-src="{{ .RelPermalink }}" loading="lazy" alt="{{ .Name }}">
-      {{- else if eq ".webm" $ext }}
-        {{- $basename := replace (path.Base .Name) $ext "" -}}
-        {{- $mp4 := $page.Resources.GetMatch (printf "%s/%s.mp4" $folder $basename) -}}
-        <video autoplay loop muted playsinline loading="lazy">
-          <source src="{{ .RelPermalink }}" type="video/webm">
-          {{- if $mp4 }}
-            <source src="{{ $mp4.RelPermalink }}" type="video/mp4">
-          {{- end }}
-          Your browser does not support the video tag.
-        </video>
+{{- $images := ($page.Resources.Match (printf "%s/*" $folder)) -}}
+{{- $count := len $images -}}
+{{- if gt $count 0 -}}
+
+{{- $sorted := sort $images "Name" -}}
+{{- $sumAspect := float 0 -}} {{/* sum of (width / height) for each item */}}
+{{- range $sorted -}}
+{{- $ext := lower (path.Ext .Name) -}}
+{{- if in (slice ".jpg" ".jpeg" ".png" ".gif") $ext -}}
+{{- /* try to read actual dimensions; fallback to a resized thumb if not present */ -}}
+{{- $w := float .Width -}}
+{{- $h := float .Height -}}
+{{- if or (eq $w 0) (eq $h 0) -}}
+{{- $thumb := .Resize "800x" -}}
+{{- $w = float $thumb.Width -}}
+{{- $h = float $thumb.Height -}}
+{{- end -}}
+{{- if gt $h 0 -}}
+{{- $sumAspect = add $sumAspect (div $w $h) -}}
+{{- end -}}
+{{- else -}}
+{{- /* videos or unknown types: assume 16:9 (adjust if you know real dims) */ -}}
+{{- $sumAspect = add $sumAspect (div (float 16) (float 9)) -}}
+{{- end -}}
+{{- end -}}
+
+{{- /* total horizontal margin space: each li has margin: 0 5px (left+right) -> 10px per li */ -}}
+{{- $gapPerItem := 10 -}}
+{{- $extra := mul $count $gapPerItem -}}
+
+{{- /* the max height you restrict images to in CSS */ -}}
+{{- $maxH := 300 -}}
+
+{{- /* compute the gallery width when gallery height is $maxH:
+totalWidth = sum( (w/h)*H ) + extra
+then aspect-ratio = totalWidth / H
+*/ -}}
+{{- $galleryWFloat := add (mul $sumAspect (float $maxH)) (float $extra) -}}
+{{- $galleryW := int $galleryWFloat -}}
+
+<ul class="image-gallery {{ $class }}" style="aspect-ratio: {{ $galleryW }} / {{ $maxH }}; max-height: {{ $maxH }}px;">
+  {{- range $sorted -}}
+  {{- $ext := lower (path.Ext .Name) -}}
+  <li>
+    {{- if in (slice ".jpg" ".jpeg" ".png") $ext }}
+    {{- $thumb := .Resize "800x" -}}
+    <img src="{{ $thumb.RelPermalink }}" data-zoom-src="{{ .RelPermalink }}" loading="lazy" alt="{{ .Name }}">
+    {{- else if eq ".gif" $ext }}
+    <img src="{{ .RelPermalink }}" data-zoom-src="{{ .RelPermalink }}" loading="lazy" alt="{{ .Name }}">
+    {{- else if eq ".webm" $ext }}
+    {{- $basename := replace (path.Base .Name) $ext "" -}}
+    {{- $mp4 := $page.Resources.GetMatch (printf "%s/%s.mp4" $folder $basename) -}}
+    <video autoplay loop muted playsinline>
+      <source src="{{ .RelPermalink }}" type="video/webm">
+      {{- if $mp4 }}
+      <source src="{{ $mp4.RelPermalink }}" type="video/mp4">
       {{- end }}
-      {{- if $caption }}
-        <span class="gallery-caption">{{ $caption }}</span>
-      {{- end }}
-    </li>
+      Your browser does not support the video tag.
+    </video>
+    {{- end }}
+    {{- if $caption }}
+    <span class="gallery-caption">{{ $caption }}</span>
+    {{- end }}
+  </li>
   {{- end }}
 </ul>
+{{- end -}}

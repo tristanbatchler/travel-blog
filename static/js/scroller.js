@@ -80,31 +80,31 @@ class Scroller {
 // This function ensures that if the target element is
 // not in view due to lazy loading, we scroll to it once
 // all lazy images have loaded.
-function fixAnchorScroll() {
-  const hash = window.location.hash.slice(1);
-  if (!hash) return;
+// function fixAnchorScroll() {
+//   const hash = window.location.hash.slice(1);
+//   if (!hash) return;
 
-  const el = document.getElementById(hash);
-  if (!el) return;
+//   const el = document.getElementById(hash);
+//   if (!el) return;
 
-  const lazyImgs = document.querySelectorAll('[loading="lazy"]');
+//   const lazyImgs = document.querySelectorAll('[loading="lazy"]');
 
-  if (lazyImgs.length > 0) {
-    const last = lazyImgs[lazyImgs.length - 1];
-    last.addEventListener("load", () => {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, { once: true });
+//   if (lazyImgs.length > 0) {
+//     const last = lazyImgs[lazyImgs.length - 1];
+//     last.addEventListener("load", () => {
+//       el.scrollIntoView({ behavior: "smooth", block: "start" });
+//     }, { once: true });
 
-    // Force all images to load now
-    lazyImgs.forEach((img) => img.removeAttribute("loading"));
-  } else {
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
+//     // Force all images to load now
+//     lazyImgs.forEach((img) => img.removeAttribute("loading"));
+//   } else {
+//     el.scrollIntoView({ behavior: "smooth", block: "start" });
+//   }
+// }
 
-window.addEventListener("load", fixAnchorScroll);
+// window.addEventListener("load", fixAnchorScroll);
 
-window.addEventListener("hashchange", fixAnchorScroll);
+// window.addEventListener("hashchange", fixAnchorScroll);
 
 document.addEventListener('DOMContentLoaded', () => {
   Scroller.init();
