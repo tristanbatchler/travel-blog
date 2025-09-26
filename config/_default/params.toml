@@ -22,7 +22,7 @@ advertisement = { }
 smartTOC = false
 smartTOCHideUnfocusedChildren = false
 highlightCurrentMenuArea = false
-disableImageZoom = true # Disables blowfish's own medium-zoom. My one is loaded manually in extend-head.html
+disableImageZoom = true
 
 [header]
 layout = "basic"
@@ -35,7 +35,7 @@ showAppearanceSwitcher = true
 showScrollToTop = false
 
 [homepage]
-layout = "profile"
+layout = "custom"
 showRecent = false
 showRecentItems = 5
 showMoreLink = false
