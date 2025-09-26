@@ -2,8 +2,9 @@
   margin-left: -1px;
   display: flex;
   justify-content: center;
-  margin-bottom: -1rem;
+  margin-bottom: 10px;
   padding: 0;
+  width: 100%;
 
   &.gallery-continuation {
     margin-top: 6px;

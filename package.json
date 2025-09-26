@@ -5,5 +5,8 @@
   "scripts": {
     "install:zoom": "cd assets/lib/medium-zoom && . /usr/share/nvm/init-nvm.sh && nvm use && npm install",
     "build:zoom": "cd assets/lib/medium-zoom && . /usr/share/nvm/init-nvm.sh && nvm use && npm run build"
+  },
+  "dependencies": {
+    "blowfish-tools": "^1.10.0"
   }
 }
