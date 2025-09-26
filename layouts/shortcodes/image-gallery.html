@@ -4,7 +4,9 @@
 {{- if in $folder "-part-" }}{{ $class = "gallery-continuation" }}{{ end }}
 {{- $page := .Page -}}
 
-{{- $images := ($page.Resources.Match (printf "%s/*" $folder)) -}}
+{{- $imagesRoot := ($page.Resources.Match (printf "%s/*" $folder)) -}}
+{{- $imagesGalleries := ($page.Resources.Match (printf "galleries/%s/*" $folder)) -}}
+{{- $images := union $imagesRoot $imagesGalleries -}}
 {{- $sorted := sort $images "Name" -}}
 
 {{- /* Filter out .mp4 files that have a .webm sibling */ -}}
