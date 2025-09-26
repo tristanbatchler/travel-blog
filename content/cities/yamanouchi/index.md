@@ -10,6 +10,8 @@ tags:
 description: >-
   On our way back to Tōkyō, we make a detour for the Japanese alps to pay a visit to the snow monkeys, try our hands at skiing, and indulge in some truly delicious 
   izakaya food. Along the way, we meet some interesting characters and appreciate the stunning vistas of the snowy Japanese countryside.
+series: ["Japan 2023"]
+series_order: 5
 ---
 
 ## <small>Day 14</small><br>The long trip to Yamanouchi (山ノ内)

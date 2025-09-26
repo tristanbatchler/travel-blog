@@ -4,6 +4,8 @@ date: 2023-02-02
 tags: [tokyo, kyoto, osaka, hiroshima]
 description: >-
   In our brief but memorable stay, we navigate Hiroshima's powerful past and present. From the evocative Peace Museum and Memorial Park, to stunning views and rooftop drinks, and even tackling the bustling streets for HDMI cables. A visit to Miyajima Island brings us face-to-face with friendly deer and the iconic floating torii gate, offering a mix of adventure and tranquility.
+series: ["Japan 2023"]
+series_order: 4
 ---
 
 ## <small>Day 12</small><br>Off to Hiroshima • 広島市

@@ -10,6 +10,8 @@ tags:
   - osaka
   - hiroshima
   - yamanouchi
+series: ["Japan 2023"]
+series_order: 1
 ---
 ## <small>Day 1</small><br>The departure and our first night in Tōkyō
 

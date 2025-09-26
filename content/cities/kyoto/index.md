@@ -8,6 +8,8 @@ description: We swap Tokyo's city buzz for the charming winter wonderland that
   is Kyōto. In the next five days of our journey, we navigate the city on two
   wheels, find the best  vegetable gyōza, get cozy in traditional futons, and
   even attempt cooking Japanese curry in our own kitchen.
+series: ["Japan 2023"]
+series_order: 2
 ---
 ## <small>Day 6</small><br>Off to Kyōto
 

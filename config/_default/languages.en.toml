@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Notes from Nihon"
+title = "T&S Travel"
 
 [params]
   displayName = "EN"

@@ -7,6 +7,8 @@ tags:
   - osaka
 description: >-
   From Kyoto's serene landscapes, we hop over to Osaka's electric buzz. For the next two nights, we dive into the city's lively streets, sample some of the best food in Japan, visit Universal Studios, and drink the night away at an Australian pub.
+series: ["Japan 2023"]
+series_order: 3
 ---
 
 ## <small>Day 10</small><br>En route to Ōsaka • 大阪
