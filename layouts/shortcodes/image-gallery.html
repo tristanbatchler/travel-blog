@@ -71,10 +71,13 @@
         {{- else if eq ".webm" $ext }}
           {{- $basename := replace (path.Base .Name) $ext "" -}}
           {{- $mp4 := $page.Resources.GetMatch (printf "%s/%s.mp4" $folder $basename) -}}
-          <video autoplay loop muted playsinline>
+          {{- if not $mp4 }}
+            {{- $mp4 = $page.Resources.GetMatch (printf "galleries/%s/%s.mp4" $folder $basename) -}}
+          {{- end }}
+         <video autoplay loop muted playsinline class="medium-zoom-image">
             <source src="{{ .RelPermalink }}" type="video/webm">
             {{- if $mp4 }}
-            <source src="{{ $mp4.RelPermalink }}" type="video/mp4">
+              <source src="{{ $mp4.RelPermalink }}" type="video/mp4">
             {{- end }}
             Your browser does not support the video tag.
           </video>
