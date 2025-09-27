@@ -56,7 +56,7 @@
         {{ end }}
       </section>
     {{ else if and $cardView (not $cardViewScreenWidth) }}
-
+      <!-- filepath: /home/t/Source/travel-blog/layouts/_default/term.html -->
       {{ if $groupByYear }}
 
         {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
@@ -64,7 +64,8 @@
             {{ .Key }}
           </h2>
           <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-            {{ range .Pages }}
+            {{ $sorted := sort .Pages "Date" "asc" }}
+            {{ range $sorted }}
               {{ partial "article-link/card.html" . }}
             {{ end }}
           </section>
@@ -73,14 +74,12 @@
       {{ else }}
 
         <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-          {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
-            {{ range .Pages }}
-              {{ partial "article-link/card.html" . }}
-            {{ end }}
+          {{ $allSorted := sort .Pages "Date" "asc" }}
+          {{ range $allSorted }}
+            {{ partial "article-link/card.html" . }}
           {{ end }}
         </section>
       {{ end }}
-
     {{ else if and $cardView $cardViewScreenWidth }}
 
       {{ if $groupByYear }}
