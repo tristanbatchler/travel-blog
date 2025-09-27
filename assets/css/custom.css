@@ -74,3 +74,17 @@ article h1 {
   font-style: normal;
   font-size: 4rem; /* Tailwind's text-4xl */
 }
+
+.home-title {
+  color: var(--tw-prose-invert-heading);
+  &:is(.dark *) {
+    color: var(--tw-prose-heading);
+  }
+}
+
+.home-headline {
+  color: var(--tw-prose-invert-heading);
+  &:is(.dark *) {
+    color: var(--tw-prose-heading);
+  }
+}

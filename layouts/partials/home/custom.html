@@ -54,11 +54,11 @@
             {{ end }}
           {{ end }}
           {{ if not $disableHeroImageFilter }}
-            <h1 class="mb-2 text-4xl font-extrabold text-neutral-200">
+            <h1 class="home-title mb-2 text-4xl font-extrabold text-neutral-200">
               {{ .Site.Title }}
             </h1>
             {{ with .Site.Params.Author.headline }}
-              <h2 class="mt-0 mb-0 text-xl text-neutral-300">
+              <h2 class="home-headline mt-0 mb-0 text-xl text-neutral-300">
                 {{ . | markdownify }}
               </h2>
             {{ end }}
