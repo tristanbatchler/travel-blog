@@ -7,6 +7,7 @@
     "build:zoom": "cd assets/lib/medium-zoom && . /usr/share/nvm/init-nvm.sh && nvm use && npm run build"
   },
   "dependencies": {
-    "blowfish-tools": "^1.10.0"
+    "blowfish-tools": "^1.10.0",
+    "dotenv": "^17.2.2"
   }
 }
