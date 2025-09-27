@@ -56,7 +56,6 @@
         {{ end }}
       </section>
     {{ else if and $cardView (not $cardViewScreenWidth) }}
-      <!-- filepath: /home/t/Source/travel-blog/layouts/_default/term.html -->
       {{ if $groupByYear }}
 
         {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}

@@ -93,7 +93,7 @@ constrainItemsWidth = false
 excludedKinds = [ "taxonomy", "term" ]
 
 [taxonomy]
-showTermCount = true
+showTermCount = false
 showHero = true
 showBreadcrumbs = false
 showViews = false

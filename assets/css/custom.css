@@ -88,3 +88,11 @@ article h1 {
     color: var(--tw-prose-heading);
   }
 }
+
+@media (min-width: 360px) {
+  .homepage-trips-list {
+    display: block;
+    max-width: 50%;
+    margin-left: 25%;
+  }
+}
