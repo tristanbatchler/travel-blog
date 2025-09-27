@@ -1,11 +1,10 @@
 [build]
   command = "hugo --gc --minify -b $URL"
   publish = "public"
-  environment = { NODE_VERSION = "24" }
 
 [build.environment]
   NODE_ENV = "production"
-  GO_VERSION = "1.22"
+  GO_VERSION = "1.16"
   TZ = "UTC"
 
 [context.production.environment]
