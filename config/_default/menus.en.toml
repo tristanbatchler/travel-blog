@@ -2,10 +2,17 @@
 none = "none"
 
 [[main]]
-name = "Cities"
-pageRef = "cities"
-identifier = "tzAcW5am3J"
-weight = 9_999
+name = "Trips"
+pageRef = "series"
+identifier = "trips"
+weight = 10
+
+[[main]]
+name = "Japan 2023"
+parent = "trips"
+pageRef = "series/japan-2023"
+identifier = "trips.2023.japan"
+weight = 11
 
 [[footer]]
 none = "none"
