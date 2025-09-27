@@ -71,6 +71,7 @@ showAuthorsBadges = false
 showWordCount = false
 showRelatedContent = false
 showTableOfContents = true
+relatedContentLimit = "0"
 
 [list]
 showHero = false
