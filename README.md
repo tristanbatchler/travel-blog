@@ -52,3 +52,5 @@ git submodule update --remote themes/blowfish
 ---
 
 Happy travels! ✈️
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/97f77cc1-9b67-44a5-8953-652d82c8c8d9/deploy-status)](https://app.netlify.com/projects/tns-travels/deploys)
