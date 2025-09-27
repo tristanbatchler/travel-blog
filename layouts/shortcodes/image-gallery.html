@@ -13,13 +13,7 @@
 {{- $filtered := slice -}}
 {{- range $sorted -}}
   {{- $ext := lower (path.Ext .Name) -}}
-  {{- if eq $ext ".mp4" -}}
-    {{- $basename := replace (path.Base .Name) $ext "" -}}
-    {{- $webm := $page.Resources.GetMatch (printf "%s/%s.webm" $folder $basename) -}}
-    {{- if not $webm -}}
-      {{- $filtered = $filtered | append . -}}
-    {{- end -}}
-  {{- else -}}
+  {{- if in (slice ".jpg" ".jpeg" ".png" ".gif" ".webm") $ext -}}
     {{- $filtered = $filtered | append . -}}
   {{- end -}}
 {{- end -}}
@@ -82,11 +76,6 @@
             {{- if $mp4 }}
             <source src="{{ $mp4.RelPermalink }}" type="video/mp4">
             {{- end }}
-            Your browser does not support the video tag.
-          </video>
-        {{- else if eq ".mp4" $ext }}
-          <video autoplay loop muted playsinline>
-            <source src="{{ .RelPermalink }}" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         {{- end }}
