@@ -23,7 +23,8 @@ title = "T&S Travel"
   bio = """
   We're an Australian couple in our late-twenties who love to travel. We have two orange cats, Ferris and Goldie. 
 
-  <img src="img/ferris_goldie.jpg" alt="Our cats" style="width:144px;height:144px;" class="rounded-full object-cover mx-auto mb-2" />
+  <img src="img/ferris_goldie.jpg" alt="Our cats" width="144" height="144" class="rounded-full object-cover mx-auto mb-2" />
+
 
   We're also tech nerds, and we built this website ourselves to have a place to easily look back on our travel memories.
 
